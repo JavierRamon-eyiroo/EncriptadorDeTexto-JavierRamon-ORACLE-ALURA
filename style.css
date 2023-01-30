@@ -1,0 +1,293 @@
+body {
+    background: #E5E5E5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    margin: 40px 0 0 84px;
+    float: left;
+    animation: rotacion var(--time);
+}
+
+.titulo {
+    width: auto;
+    margin: 50px 10px 0 20px;
+    float: left;
+}
+
+.titulo h1 {
+    font-size:  30px;
+    color: #0a3871;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.contenedor {
+    width: 900px;
+    height: 150px;
+    border: black 5px;
+}
+
+
+.principal {
+    margin: 0 auto;
+    width: 1000px;
+    height: 580px;
+}
+
+.izq {
+    float: left;
+    width: 70%;
+    height: 70%;
+    border-radius: 24px;
+}
+
+.der {
+    float: right;
+    width: 30%;
+    height: 460px;
+    border-radius: 32px;
+    background: white;
+}
+
+#cajaTexto {
+    float: left;
+    width: 97%;
+    height: 90%;
+    border-radius: 1em;
+    padding: 5px;
+    font-size: 20px;
+    color: #0A3871;
+    background: #E5E5E5;
+    border-color: #E5E5E5;
+    resize: none;
+    outline: none;
+}
+
+#cajaRespuesta {
+    font-size: 17.8px;
+    color: #0A3871;
+    width: 95%;
+    border-radius: 1em;
+    resize: none;
+    outline: none;
+    padding: 8px;
+    border-color: white;
+}
+
+.advertencia {
+    font-size: 18px;
+    padding: 5px;
+    color: black;
+}
+
+/*Dise;o apra el boton de encriptar*/
+#encriptar {
+    width: 40%;
+    padding: 15px 0;
+    margin: 5px;
+    font-size: 20px;
+    background: #0A3871;
+    color: white;
+    border-radius: 1em;
+    border-color: #0A3871;
+}
+/*Cuando pasas el pulsador por el boton se pone blnaco*/
+#encriptar:hover {
+    background: #1363c6;
+    border-color: white;
+    transform: scale(1.05);
+}
+
+/*Dise;o para el boton de desencriptar*/
+#desencriptar {
+    width: 40%;
+    padding: 15px 0 ;
+    margin: 5px;
+    font-size: 20px;
+    background: white;
+    color: #0A3871;
+    border-radius: 1em;
+    border-color: white;
+}
+
+/*Cuando pasas el pulsador por el boton se pone en azul*/
+#desencriptar:hover {
+    background: #1363c6;
+    color: white;
+    transform: scale(1.05);
+}
+
+#copiar {
+    width: 93%;
+    padding: 15px 0;
+    margin: 10px;
+    font-size: 20px;
+    background: white;
+    color: #0A3871;
+    border-radius: 1em;
+    border-color: #0A3871;
+} 
+
+#copiar:hover {
+    background: #1363c6;
+    color: white;
+    transform: scale(1.05);
+}
+
+.imagen {
+    width: 85%;
+    margin: 25px 10px;
+}
+
+.mensaje {
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.der p {
+    font-size: 15px;
+    margin: 20px 10px 40px 10px;
+    text-align: center;
+}
+
+footer h1{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    color: #0A3871;
+    padding-bottom: 20px;
+}
+
+
+@media screen and (max-width:525px){
+    .titulo h1{
+        font-size: 50px;
+    }
+
+   .izq{
+        float: none;
+        display: block;
+        height: 100%;
+        margin: 0 auto 180px ;
+    }
+
+    .der{
+        float: none;
+        background: #E5E5E5;
+        display: block;
+        width: 70%;
+        margin: 250px auto;
+        padding: 25px;
+        
+    }
+
+
+    #cajaTexto{
+        float: none;
+        margin: 0 auto;
+        height: 100%;
+        border-color: #0A3871;
+        font-size: 40px;
+    }
+
+
+    .advertencia{
+        font-size: 25px;
+        font-weight: bold;
+        margin: 5px;
+    }
+
+    #encriptar, #desencriptar{
+        width: 100%;
+        margin: 10px 0;
+        font-size: 30px;
+    }
+
+    .imagen{
+        width: 75%;
+        margin: 50px 80px;
+    }
+
+    .mensaje{
+        font-size: 50px;
+        margin: 10px 0;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .der p{
+        font-size: 25px;
+        margin: 20px 20px 80px 20px;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    #copiar{
+        width: 97%;
+        margin: 10px auto;
+        font-size: 25px;
+    }
+
+    #cajaRespuesta{
+        font-size: 30px;
+    }      
+    
+}
+
+.box-footer {
+    display: flex;
+    align-items: baseline;
+    font-size: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+footer span {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 1.3rem;
+}
+
+footer span {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 1.3rem;
+}
+  
+footer span:nth-child(1) {
+    color: #1b1b1b;
+}
+  
+footer span:nth-child(2) {
+    width: 1.1rem;
+    margin: 1rem 1rem;
+}
+  
+footer span:nth-child(3) {
+    color: #111010;
+}
+  
+footer span:nth-child(4) {
+    color: #99948e;
+    margin: 0.5rem 0.5rem;
+}
+
+.icon_linkedin {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 0.7rem;
+    margin-right: 0.4rem;
+}
+  
+.icon_github {
+    width: 1.2rem;
+    height: 1.2rem;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador de Texto | Javier Ramon</title>
+    <!--el shortcut sirve para la ubicacion de un favicon en nuestro sitio web-->
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="logo">
+                <img src="./img/logo.svg" alt="Logo de Alura">
+            </div>
+            <div class="titulo">
+                <h1>Encriptador de Mensajes</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+        <section class="principal">
+            <div class="izq">
+                <textarea name="cajaTexto" id="cajaTexto" cols="80" rows="7" class="input-padron" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="botonesEncriptador">
+                    <p class="advertencia">&#9888; Solo minusculas y sin acentos</p>
+                    <button type="button" id="encriptar" onclick="encriptar()">Encriptar</button>
+                    <button type="button" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+            <div class="der" id="der">
+                <!--Este codigo es para poder mostrar la informacion codificada
+                <textarea name = "cajaRespuesta" id = "cajaRespuesta" cols="18" rows="20"></textarea>
+                <button type="button" id="copiar" onclick="copiar()">Copiar</button>-->
+                <img src="./img/muneco.svg" alt="Buscando Respuesta"  class="imagen">
+                <h1 class="mensaje">Ningun mensaje fue encontrado</h1>
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="box-footer">
+            <span>&copy; 2023 | Javier Ramon </span>
+            <a href="https://www.linkedin.com/in/juan-javier-ramon-segarra-b79b84166/" target="_blank">
+                <img class="icon_linkedin" src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="Linkedin">
+            </a>
+            <a href="https://github.com/JavierRamon-eyiroo" target="_blank">
+                <img class="icon_github" src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHub">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
